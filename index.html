@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Petshop DPM</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
 </head>
 
 <body>
@@ -14,6 +15,11 @@
         <img src="./imagenes/Mi proyecto.png" alt="logo" class="logo">
 
         <nav class="navbar">
+            <label for="menu-toggle" class="menu-label">
+                <img src="./imagenes/menu1.png" alt="icono menu" class="menu-icon">
+            </label>
+            <input type="checkbox" id="menu-toggle">
+
             <ul class="navbar-list">
                 <li>
                     <a href="#">Home</a>
@@ -28,7 +34,11 @@
                     <a href="#">Contáctenos</a>
                 </li>
             </ul>
-            <img src="./imagenes/shoppingcart_120371.png" alt="carrito" class="cart-icon">
+
+            <label for="cart-toggle" class="cart-label">
+                <img src="./imagenes/shoppingcart_120371.png" alt="carrito" class="cart-icon">
+            </label>
+            <input type="checkbox" id="cart-toggle">
         </nav>
     </header>
 
@@ -69,7 +79,43 @@
                 </p>
             </div>
         </section>
+
+        <section id="info">
+            <h2>Los mejores productos para tus mascotas</h2>
+            <div class="logomarca">
+                <div class="marcas">
+                    <img src="./imagenes/correas.png" alt="marca" class="marca1">
+                    <h3>Accesorios</h3>
+                    <p>Aqui vas a encontrar todo tipo de juguetes para que se puedan divertir y tambien collares,
+                        correas y pretales.</p>
+                </div>
+                <div class="marcas">
+                    <img src="./imagenes/cama.png" alt="marca" class="marca2">
+                    <h3>Camas y ropa</h3>
+                    <p>En esta seccion vas a encontrar camitas adaptadas para tu mascota ya sea invierno o verano.
+                        Tambien hay ropita para ellos de todos los tamaños y gran variedad de diseños.</p>
+                </div>
+                <div class="marcas">
+                    <img src="./imagenes/nexgard.png" alt="marca" class="marca3">
+                    <h3>Higiene y salud</h3>
+                    <p>Aca vas a encontrar todo lo referido a la higiene en general de tu mascota y la salud de ellos.
+                        Vendemos pipetas, pastillas para pulgas y garrapatas.</p>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer>
+        <div>
+            <ul class="footer-links">
+                <li><a href="#">Contáctenos</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+                <li><a href="#">Promociones</a></li>
+            </ul>
+        </div>
+        <p>Gracias por elegirnos</p>
+        <p>Hecho con 💕 <span>DPM</span></p>
+    </footer>
 </body>
 
-</html>l
+</html>
